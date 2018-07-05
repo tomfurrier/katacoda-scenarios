@@ -25,12 +25,6 @@
     "imageid": "docker"
   },
   "assets": {
-    "client": [
-      {
-        "file": "index.html",
-        "target": "/home/scrapbook/tutorial/",
-        "chmod": "+x"
-      }
-    ]
+    "host01": [{ "file": "*", "target": "/root", "chmod": "+x" }]
   }
 }
