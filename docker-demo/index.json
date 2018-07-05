@@ -15,7 +15,12 @@
         "title": "Step 3",
         "text": "step3.md"
       }
-    ]
+    ],
+    "assets": {
+      "client": [
+        { "file": "*", "target": "/home/scrapbook/tutorial", "chmod": "+x" }
+      ]
+    }
   },
   "files": ["Dockerfile"],
   "environment": {
@@ -23,8 +28,5 @@
   },
   "backend": {
     "imageid": "docker"
-  },
-  "assets": {
-    "host01": [{ "file": "*", "target": "/root", "chmod": "+x" }]
   }
 }
