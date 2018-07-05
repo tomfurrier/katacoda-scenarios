@@ -4,4 +4,7 @@ Launch the container
 
 -d: NGINX is designed to run as a background service
 
+check:
+`docker ps` {{execute}}
+
 test: http://[[CLIENT_SUBDOMAIN]][[KATACODA_HOST]].environments.katacoda.com/
