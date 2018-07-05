@@ -17,6 +17,7 @@
       }
     ]
   },
+  "files": ["Dockerfile"],
   "environment": {
     "uilayout": "editor-terminal"
   },
@@ -24,14 +25,10 @@
     "imageid": "docker"
   },
   "assets": {
-    "client": [
+    "host01": [
       {
         "file": "index.html",
-        "target": "~/"
-      },
-      {
-        "file": "Dockerfile",
-        "target": "~/"
+        "target": "/root"
       }
     ]
   }
