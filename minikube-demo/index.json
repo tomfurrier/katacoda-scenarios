@@ -1,6 +1,6 @@
 {
-  "title": "test2",
-  "description": "asdf",
+  "title": "Minikube demo",
+  "description": "basic minikube deployment",
   "details": {
     "steps": [
       {
@@ -15,18 +15,13 @@
         "title": "Step 3",
         "text": "step3.md"
       }
-    ],
-    "intro": {
-      "text": "intro.md"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
+    ]
   },
+  "files": ["azure-vote.yaml"],
   "environment": {
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "kubernetes"
   }
 }
