@@ -18,11 +18,11 @@
     ],
     "assets": {
       "client": [
-        { "file": "index", "target": "/home/scrapbook/", "chmod": "+x" }
+        { "file": "*", "target": "/home/scrapbook/tutorial", "chmod": "+x" }
       ]
     }
   },
-  "files": ["Dockerfile"],
+  "files": ["Dockerfile", "index.html"],
   "environment": {
     "uilayout": "editor-terminal"
   },

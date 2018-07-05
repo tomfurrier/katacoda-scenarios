@@ -15,3 +15,9 @@ COPY: This is extremely useful for source code and assets that you want to be de
 EXPOSE: With our files copied into our image and any dependencies downloaded, you need to define which port application needs to be accessible on.
 
 CMD: defines the default command to run when a container is launched
+
+Copy the following snippet to the index.html:
+
+<pre class="file" data-filename="index.html" data-target="replace">
+<h1>Hello Dojo!</h1>
+</pre>
