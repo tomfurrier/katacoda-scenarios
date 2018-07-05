@@ -23,14 +23,5 @@
   },
   "backend": {
     "imageid": "docker"
-  },
-  "assets": {
-    "client": [
-      {
-        "file": "index.html",
-        "target": "/home/scrapbook/",
-        "chmod": "+x"
-      }
-    ]
   }
 }
