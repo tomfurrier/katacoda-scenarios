@@ -27,7 +27,7 @@
   "assets": {
     "client": [
       {
-        "file": "./assets/index.html",
+        "file": "index.html",
         "target": "/home/scrapbook/tutorial/",
         "chmod": "+x"
       }
