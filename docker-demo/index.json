@@ -17,9 +17,7 @@
       }
     ],
     "assets": {
-      "client": [
-        { "file": "*", "target": "/home/scrapbook/tutorial", "chmod": "+x" }
-      ]
+      "client": [{ "file": "*", "target": "/home/scrapbook/", "chmod": "+x" }]
     }
   },
   "files": ["Dockerfile"],
