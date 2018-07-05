@@ -28,7 +28,7 @@
     "client": [
       {
         "file": "index.html",
-        "target": "/root"
+        "target": "/home/scrapbook/", "chmod": "+x"}
       }
     ]
   }
