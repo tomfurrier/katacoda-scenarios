@@ -8,4 +8,6 @@ check:
 
 `docker ps`{{execute}}
 
-test: http://[[CLIENT_SUBDOMAIN]]-30300-[[KATACODA_HOST]].environments.katacoda.com/
+test:
+
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
