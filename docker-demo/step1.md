@@ -1,62 +1,23 @@
-Copy the following snippet to the azure-vote.yaml:
+Copy the following snippet to the Dockerfile:
 
-<pre class="file" data-filename="azure-vote.yaml" data-target="replace">
-apiVersion: apps/v1beta1
-kind: Deployment
-metadata:
-  name: azure-vote-back
-spec:
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: azure-vote-back
-    spec:
-      containers:
-      - name: azure-vote-back
-        image: redis
-        ports:
-        - containerPort: 6379
-          name: redis
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: azure-vote-back
-spec:
-  ports:
-  - port: 6379
-  selector:
-    app: azure-vote-back
----
-apiVersion: apps/v1beta1
-kind: Deployment
-metadata:
-  name: azure-vote-front
-spec:
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: azure-vote-front
-    spec:
-      containers:
-      - name: azure-vote-front
-        image: microsoft/azure-vote-front:v1
-        ports:
-        - containerPort: 80
-        env:
-        - name: REDIS
-          value: "azure-vote-back"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: azure-vote-front
-spec:
-  type: LoadBalancer
-  ports:
-  - port: 80
-  selector:
-    app: azure-vote-front
+<pre class="file" data-filename="Dockerfile" data-target="replace">
+FROM nginx:1.11-alpine
+COPY index.html /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+</pre>
+
+FROM: base image.
+It's recommended that you always use a particular version number as your tag and manage the updating yourself.
+
+COPY: This is extremely useful for source code and assets that you want to be deployed inside your containe
+
+EXPOSE: With our files copied into our image and any dependencies downloaded, you need to define which port application needs to be accessible on.
+
+CMD: defines the default command to run when a container is launched
+
+Copy the following snippet to the index.html:
+
+<pre class="file" data-filename="index.html" data-target="replace">
+<h1>Hello Dojo!</h1>
 </pre>

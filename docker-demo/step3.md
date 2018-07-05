@@ -1,6 +1,12 @@
-w8 for the front service to start
+Launch the container
 
-`kubectl get service azure-vote-front --watch`{{execute}}
+`docker run -d -p 80:80 myginx:v1`{{execute}}
+
+-d: NGINX is designed to run as a background service
+
+check:
+
+`docker ps`{{execute}}
 
 test:
 
